@@ -7,10 +7,13 @@
     <title>Localizador</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/icone-location.svg">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 
 <body>
-    <h1 class="texto-principal">Localizador de AS </h1>
+    <h1 class="texto-principal">Localizador de Cidades</h1>
 
     <div class="lista-principal">
         <h2 class="texto-estado">Estados:</h2>
@@ -213,6 +216,12 @@
                 <option value="Gurupi">Gurupi</option>
             </optgroup>
         </select>
+        <h4 style="color: white; padding: 2rem; font-size: 20px; font-weight: 800;">Local selecionado:</h4>
+    </div>
+
+    <div class="card">
+        <button type="button" id="show-map" class="btn-mostrar">Mostrar no Mapa</button>
+        <div id="map" style="height: 300px; width: 100%; margin-top: 20px;"></div>
     </div>
 
 
