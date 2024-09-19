@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Localizador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/icone-location.svg">
+</head>
+
+<body>
+    <h1 class="texto-principal">Localizador de AS </h1>
+
+    <div class="lista-principal">
+        <h2 class="texto-estado">Estados:</h2>
+        <select id="estados">
+            <option value="">Selecione um estado</option>
+            <option value="AC">Acre (AC)</option>
+            <option value="AL">Alagoas (AL)</option>
+            <option value="AP">Amapá (AP)</option>
+            <option value="AM">Amazonas (AM)</option>
+            <option value="BA">Bahia (BA)</option>
+            <option value="CE">Ceará (CE)</option>
+            <option value="DF">Distrito Federal (DF)</option>
+            <option value="ES">Espírito Santo (ES)</option>
+            <option value="GO">Goiás (GO)</option>
+            <option value="MA">Maranhão (MA)</option>
+            <option value="MT">Mato Grosso (MT)</option>
+            <option value="MS">Mato Grosso do Sul (MS)</option>
+            <option value="MG">Minas Gerais (MG)</option>
+            <option value="PA">Pará (PA)</option>
+            <option value="PB">Paraíba (PB)</option>
+            <option value="PR">Paraná (PR)</option>
+            <option value="PE">Pernambuco (PE)</option>
+            <option value="PI">Piauí (PI)</option>
+            <option value="RJ">Rio de Janeiro (RJ)</option>
+            <option value="RN">Rio Grande do Norte (RN)</option>
+            <option value="RS">Rio Grande do Sul (RS)</option>
+            <option value="RO">Rondônia (RO)</option>
+            <option value="RR">Roraima (RR)</option>
+            <option value="SC">Santa Catarina (SC)</option>
+            <option value="SP">São Paulo (SP)</option>
+            <option value="SE">Sergipe (SE)</option>
+            <option value="TO">Tocantins (TO)</option>
+        </select>
+    </div>
+
+    <div class="lista-secundaria">
+        <h3 class="texto-cidade">Cidades:</h3>
+        <select id="cidades">
+            <option value="">Selecione uma cidade</option>
+
+            <optgroup label="Acre">
+                <option value="Rio Branco">Rio Branco</option>
+                <option value="Cruzeiro do Sul">Cruzeiro do Sul</option>
+                <option value="Sena Madureira">Sena Madureira</option>
+            </optgroup><br>
+
+            <optgroup label="Alagoas">
+                <option value="Maceió">Maceió</option>
+                <option value="Arapiraca">Arapiraca</option>
+                <option value="Palmeira dos Índios">Palmeira dos Índios</option>
+            </optgroup><br>
+
+            <optgroup label="Amapá">
+                <option value="Macapá">Macapá</option>
+                <option value="Santana">Santana</option>
+                <option value="Oiapoque">Oiapoque</option>
+            </optgroup><br>
+
+            <optgroup label="Amazonas">
+                <option value="Manaus">Manaus</option>
+                <option value="Parintins">Parintins</option>
+                <option value="Itacoatiara">Itacoatiara</option>
+            </optgroup><br>
+
+            <optgroup label="Bahia">
+                <option value="Salvador">Salvador</option>
+                <option value="Feira de Santana">Feira de Santana</option>
+                <option value="Vitória da Conquista">Vitória da Conquista</option>
+            </optgroup><br>
+
+            <optgroup label="Ceará">
+                <option value="Fortaleza">Fortaleza</option>
+                <option value="Juazeiro do Norte">Juazeiro do Norte</option>
+                <option value="Sobral">Sobral</option>
+            </optgroup><br>
+
+            <optgroup label="Distrito Federal">
+                <option value="Brasília">Brasília</option>
+                <option value="Taguatinga">Taguatinga</option>
+                <option value="Ceilândia">Ceilândia</option>
+            </optgroup><br>
+
+            <optgroup label="Espírito Santo">
+                <option value="Vitória">Vitória</option>
+                <option value="Vila Velha">Vila Velha</option>
+                <option value="Serra">Serra</option>
+            </optgroup><br>
+
+            <optgroup label="Goiás">
+                <option value="Goiânia">Goiânia</option>
+                <option value="Aparecida de Goiânia">Aparecida de Goiânia</option>
+                <option value="Anápolis">Anápolis</option>
+            </optgroup><br>
+
+            <optgroup label="Maranhão">
+                <option value="São Luís">São Luís</option>
+                <option value="Imperatriz">Imperatriz</option>
+                <option value="Caxias">Caxias</option>
+            </optgroup><br>
+
+            <optgroup label="Mato Grosso">
+                <option value="Cuiabá">Cuiabá</option>
+                <option value="Várzea Grande">Várzea Grande</option>
+                <option value="Rondonópolis">Rondonópolis</option>
+            </optgroup><br>
+
+            <optgroup label="Mato Grosso do Sul">
+                <option value="Campo Grande">Campo Grande</option>
+                <option value="Dourados">Dourados</option>
+                <option value="Três Lagoas">Três Lagoas</option>
+            </optgroup><br>
+
+            <optgroup label="Minas Gerais">
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="Uberlândia">Uberlândia</option>
+                <option value="Contagem">Contagem</option>
+            </optgroup><br>
+
+            <optgroup label="Pará">
+                <option value="Belém">Belém</option>
+                <option value="Ananindeua">Ananindeua</option>
+                <option value="Santarém">Santarém</option>
+            </optgroup><br>
+
+            <optgroup label="Paraíba">
+                <option value="João Pessoa">João Pessoa</option>
+                <option value="Campina Grande">Campina Grande</option>
+                <option value="Patos">Patos</option>
+            </optgroup><br>
+
+            <optgroup label="Paraná">
+                <option value="Curitiba">Curitiba</option>
+                <option value="Londrina">Londrina</option>
+                <option value="Maringá">Maringá</option>
+            </optgroup><br>
+
+            <optgroup label="Pernambuco">
+                <option value="Recife">Recife</option>
+                <option value="Jaboatão dos Guararapes">Jaboatão dos Guararapes</option>
+                <option value="Olinda">Olinda</option>
+            </optgroup><br>
+
+            <optgroup label="Piauí">
+                <option value="Teresina">Teresina</option>
+                <option value="Parnaíba">Parnaíba</option>
+                <option value="Picos">Picos</option>
+            </optgroup><br>]
+
+            <optgroup label="Rio de Janeiro">
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Niterói">Niterói</option>
+                <option value="Duque de Caxias">Duque de Caxias</option>
+            </optgroup><br>
+
+            <optgroup label="Rio Grande do Norte">
+                <option value="Natal">Natal</option>
+                <option value="Mossoró">Mossoró</option>
+                <option value="Parnamirim">Parnamirim</option>
+            </optgroup><br>
+
+            <optgroup label="Rio Grande do Sul">
+                <option value="Porto Alegre">Porto Alegre</option>
+                <option value="Caxias do Sul">Caxias do Sul</option>
+                <option value="Pelotas">Pelotas</option>
+            </optgroup><br>
+
+            <optgroup label="Rondônia">
+                <option value="Porto Velho">Porto Velho</option>
+                <option value="Ji-Paraná">Ji-Paraná</option>
+                <option value="Ariquemes">Ariquemes</option>
+            </optgroup><br>
+
+            <optgroup label="Roraima">
+                <option value="Boa Vista">Boa Vista</option>
+                <option value="Rorainópolis">Rorainópolis</option>
+                <option value="Caracaraí">Caracaraí</option>
+            </optgroup><br>
+
+            <optgroup label="Santa Catarina">
+                <option value="Florianópolis">Florianópolis</option>
+                <option value="Joinville">Joinville</option>
+                <option value="Blumenau">Blumenau</option>
+            </optgroup><br>
+
+            <optgroup label="São Paulo">
+                <option value="São Paulo">São Paulo</option>
+                <option value="Campinas">Campinas</option>
+                <option value="Santos">Santos</option>
+            </optgroup><br>
+
+            <optgroup label="Sergipe">
+                <option value="Aracaju">Aracaju</option>
+                <option value="Nossa Senhora do Socorro">Nossa Senhora do Socorro</option>
+                <option value="Itabaiana">Itabaiana</option>
+            </optgroup><br>
+
+            <optgroup label="Tocantins">
+                <option value="Palmas">Palmas</option>
+                <option value="Araguaína">Araguaína</option>
+                <option value="Gurupi">Gurupi</option>
+            </optgroup>
+        </select>
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body, html{
+    background-image: url(./img/54571lg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.lista-secundaria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+input{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    height: 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    position: auto;
+}
+
+#list li {
+    display: none;
+}
+
+.texto-principal {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: auto;
+}
+
+.estados {
+    border-radius: 60px;
+}
+
+.texto-estado {
+    color: white;
+}
+
+.texto-cidade {
+    color: white;
+}
+
+.select {
+    width: 50%;
+}
