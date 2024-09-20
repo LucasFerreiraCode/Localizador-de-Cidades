@@ -1,6 +1,5 @@
 var map = L.map('map').setView([-15.7801, -47.9292], 4); // Posição inicial: Brasília
 
-// Adicionar o tile do mapa
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>contributors'
 }).addTo(map);
@@ -87,29 +86,25 @@ const citiesCoordinates = {
     "Gurupi": [-11.7279, -49.068],
 };
 
-// // Inicializar o mapa
 // const map = L.map('map').setView([-15.7801, -47.9292], 4); // Posição inicial (Brasília)
 
-// Adicionar a camada do mapa (OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
 }).addTo(map);
 
-// Função para mover o mapa para as coordenadas selecionadas
 document.getElementById('show-map').addEventListener('click', function () {
     const selectedCity = document.getElementById('cidades').value;
 
     if (selectedCity && citiesCoordinates[selectedCity]) {
         const [lat, lon] = citiesCoordinates[selectedCity];
-        map.setView([lat, lon], 12); // Centraliza o mapa na cidade selecionada
+        map.setView([lat, lon], 12);
     } else {
         alert('Por favor, selecione uma cidade válida.');
     }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const map = L.map('map').setView([-15.7801, -47.9292], 4); // Posição inicial em Brasília
-
+    const map = L.map('map').setView([-15.7801, -47.9292], 4);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
     }).addTo(map);
