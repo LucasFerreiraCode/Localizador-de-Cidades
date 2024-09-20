@@ -56,14 +56,6 @@ input {
     font-style: normal;
 }
 
-.texto-estado {
-    color: white;
-    font-size: 25px;
-    font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .texto-cidade {
     color: white;
     font-size: 25px;
@@ -125,16 +117,6 @@ input {
     margin-bottom: 10%;
     border: none;
     font-family: "Patua One", serif;
-}
-
-.selecionador-est {
-    width: 20%;
-    min-height: 25px;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    font-family: "Patua One", serif;
-    font-size: ;
 }
 
 .selecionador-city {
