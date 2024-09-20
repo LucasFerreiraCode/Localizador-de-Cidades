@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
 body,
 html {
@@ -46,30 +46,58 @@ input {
 }
 
 .texto-principal {
-    background: rgb(0, 153, 230);
-    background: linear-gradient(90deg, rgba(0, 153, 230, 1) 0%, rgb(121, 170, 180) 100%);
+    padding: 2rem;
     color: white;
     display: flex;
     justify-content: center;
     margin: auto;
-}
-
-.estados {
-    border-radius: 60px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .texto-estado {
     color: white;
+    font-size: 25px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .texto-cidade {
     color: white;
+    font-size: 25px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-info {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: whitesmoke;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.selecionar {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 1rem;
+    font-size: 25px;
 }
 
 .card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 400px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 40%;
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -77,12 +105,39 @@ input {
 }
 
 #map {
-    height: 300px;
+    height: 500px;
     width: 100%;
 }
 
-.btn-mostrar {
-    height: 30px;
-    border-radius: 10px;
+.botao-localizar {
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+}
+
+.btn-mostrar {
+    border-radius: 10px;
+    width: 15%;
+    height: 25%;
+    margin-bottom: 10%;
+    border: none;
+}
+
+.selecionador-est {
+    width: 20%;
+    min-height: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.selecionador-city {
+    width: 20%;
+    min-height: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
 }
