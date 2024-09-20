@@ -102,18 +102,3 @@ document.getElementById('show-map').addEventListener('click', function () {
         alert('Por favor, selecione uma cidade válida.');
     }
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const map = L.map('map').setView([-15.7801, -47.9292], 4);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 18,
-    }).addTo(map);
-});
-
-document.getElementById('map').addEventListener('click', function() {
-    const city = document.getElementById('cidades').value;
-    if (city && citiesCoordinates[city]) {
-        const [lat, lng] = citiesCoordinates[city];
-        map.setView([lat, lng], 10);
-    }
-});
