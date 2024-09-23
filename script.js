@@ -1,4 +1,4 @@
-var map = L.map('map').setView([-15.7801, -47.9292], 4); // Posição inicial: Brasília
+var map = L.map('map').setView([-15.7801, -47.9292], 4);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>contributors'
@@ -86,7 +86,6 @@ const citiesCoordinates = {
     "Gurupi": [-11.7279, -49.068],
 };
 
-// const map = L.map('map').setView([-15.7801, -47.9292], 4); // Posição inicial (Brasília)
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
